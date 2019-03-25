@@ -158,3 +158,11 @@ body{
     transition-delay: 0.2s;
     transition-duration: 0;
   }
+
+  textarea[name="message"] {
+    width: 770px;
+  }
+
+  input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 2px solid red;
+  }
