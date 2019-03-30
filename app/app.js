@@ -20,7 +20,12 @@ myNinjaApp.config(['$routeProvider', function($routeProvider) {
 			controller: 'NinjaController'
 		})
 		.when('/contact', {
-			templateUrl: 'views/contact.html'
+			templateUrl: 'views/contact.html',
+			controller: 'ContactController',
+		})
+		.when('/contact-success', {
+			templateUrl: 'views/contact-success.html',
+			controller: 'ContactController',
 		})
 		.when('/directory', {
 			templateUrl: 'views/directory.html',
@@ -91,3 +96,12 @@ myNinjaApp.controller('NinjaController', ['$scope', '$http', function($scope, $h
 }]
 /*]*/
 );
+
+myNinjaApp.controller('ContactController', ['$scope', '$location', 
+	function($scope, $location) {
+	
+	$scope.sendMessage = function() {
+		$location.path('/contact-success');
+	}
+	
+}])
