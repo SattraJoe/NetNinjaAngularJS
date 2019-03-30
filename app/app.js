@@ -54,46 +54,7 @@ myNinjaApp.controller('NinjaController', ['$scope', '$http', function($scope, $h
         $scope.myLang = myLang;        
         $scope.myVarfromView = varfromview;        
         $scope.phoneRegex = /^(?:0[0-9]{2})*-([0-9]{3})*-([0-9]{4})$/;
-        $scope.message = "hey you all";
-        // $scope.root = "index.php#!";
-        // $scope.ninjas = [
-		// 	{
-		// 		name: 'Yoshi',
-		// 		belt: 'green',
-		// 		rate: 50,
-		// 		available: true,
-		// 		// thumb: content/img/yoshi.png"
-		// 		thumb: "content/img/ninja.png"
-		// 	},
-		// 	{
-		// 		name: 'Crystal',
-		// 		belt: 'yellow',
-		// 		rate: 30,
-		// 		available: true,
-		// 		thumb: "content/img/ninja1.png"
-		// 		// thumb: window.__base_url + "content/img/ninja.png"
-		// 	},
-		// 	{
-		// 		name: 'Ryu',
-		// 		belt: 'orange',
-		// 		rate: 10,
-		// 		available: true,
-		// 		thumb: "content/img/ninja3.png"
-		// 		// thumb: window.__base_url + "content/img/ninja.png"
-		// 	},
-		// 	{
-		// 		name: 'Shaun',
-		// 		belt: 'black',
-		// 		rate: 1000,
-		// 		available: true,
-		// 		thumb: "content/img/ninja4.png"
-		// 		// thumb: window.__base_url + "content/img/ninja.png"
-		// 	},
-		// ];
-        // console.log(angular.toJson($scope.ninjas));
-        // $http.get('data/ninjas.json').success(function(data){
-        //     $scope.ninjas = data;
-		// });
+        $scope.message = "hey you all";        
 		$scope.getNinja();
 	}
 	
